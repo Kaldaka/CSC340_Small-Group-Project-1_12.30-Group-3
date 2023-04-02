@@ -18,7 +18,7 @@ int main(){
     const int SECTION1SIZE= 40; //number of students in section 1
     const int SECTION2SIZE= 45; //number of students in section 2
     int min =3;
-    int max=4;
+    int max=5;
     int numOfunassignedStudents1=6;
     int numOfunassignedStudents2=8;
 
@@ -40,11 +40,11 @@ int main(){
     cout<<"Section 1:"<<endl;
     cout<<"----------"<<endl;
     cout<<"\nAdding random students to random groups..."<<endl;
-    assignToGroups(Sec1Groups, unassignedStudents1, SECTION1SIZE,3,5);//for section 1
+    assignToGroups(Sec1Groups, unassignedStudents1, SECTION1SIZE,min,max);//for section 1
     cout<<"\n\nSection 2:"<<endl;
     cout<<"----------"<<endl;
     cout<<"\nAdding random students to random groups..."<<endl;
-    assignToGroups(Sec2Groups, unassignedStudents2, SECTION2SIZE, 3, 5);//for section 2
+    assignToGroups(Sec2Groups, unassignedStudents2, SECTION2SIZE, min, max);//for section 2
     cout<<endl;
 }
 
